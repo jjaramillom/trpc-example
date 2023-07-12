@@ -1,0 +1,24 @@
+{
+  "name": "trpc-tutorial",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "api",
+      "ui"
+    ]
+  },
+  "engines": {
+    "node": ">=16.17",
+    "yarn": ">=1.22",
+    "npm": "use-yarn-instead"
+  },
+  "scripts": {
+    "ui": "yarn workspace client",
+    "api": "yarn workspace api",
+    "scan:vulnerabilities": "audit-ci --moderate --skip-dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  }
+}
