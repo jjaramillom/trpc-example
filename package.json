@@ -14,7 +14,7 @@
     "npm": "use-yarn-instead"
   },
   "scripts": {
-    "ui": "yarn workspace client",
+    "ui": "yarn workspace ui",
     "api": "yarn workspace api",
     "scan:vulnerabilities": "audit-ci --moderate --skip-dev"
   },
